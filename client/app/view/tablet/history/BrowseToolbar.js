@@ -7,7 +7,7 @@ Ext.define('App.view.tablet.history.BrowseToolbar', {
             xtype: 'combobox',
             valueField: 'value',
             displayField: 'label',
-            placeholder: 'All Employees',
+            placeholder: '従業員で検索',
             queryMode: 'local',
             weight: 10,
             bind: {
@@ -19,7 +19,7 @@ Ext.define('App.view.tablet.history.BrowseToolbar', {
             xtype: 'combobox',
             valueField: 'value',
             displayField: 'label',
-            placeholder: 'All Organizations',
+            placeholder: '組織で検索',
             queryMode: 'local',
             weight: 11,
             bind: {
@@ -31,7 +31,7 @@ Ext.define('App.view.tablet.history.BrowseToolbar', {
             xtype: 'combobox',
             valueField: 'value',
             displayField: 'label',
-            placeholder: 'All Offices',
+            placeholder: '事業所で検索',
             queryMode: 'local',
             weight: 12,
             bind: {
@@ -43,7 +43,7 @@ Ext.define('App.view.tablet.history.BrowseToolbar', {
             xtype: 'combobox',
             valueField: 'value',
             displayField: 'label',
-            placeholder: 'All Actions',
+            placeholder: 'アクティビティを検索',
             queryMode: 'local',
             weight: 13,
             bind: {

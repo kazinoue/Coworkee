@@ -14,7 +14,7 @@ Ext.define('App.view.widgets.BrowseToolbar', {
         search: {
             xtype: 'searchfield',
             reference: 'search',
-            placeholder: 'Search',
+            placeholder: '検索',
             userCls: 'expandable',
             bind: '{filters.search}',
             weight: 0
@@ -22,13 +22,13 @@ Ext.define('App.view.widgets.BrowseToolbar', {
         refresh: {
             iconCls: 'x-fa fa-refresh',
             handler: 'onRefreshTap',
-            tooltip: 'Refresh',
+            tooltip: '表示を更新',
             weight: 30
         },
         clear: {
             iconCls: 'x-fa fa-undo',
             handler: 'onClearFiltersTap',
-            tooltip: 'Clear Filters',
+            tooltip: 'フィルタをクリア',
             weight: 20
         }
     }

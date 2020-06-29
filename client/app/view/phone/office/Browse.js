@@ -38,7 +38,7 @@ Ext.define('App.view.phone.office.Browse', {
             right: [{
                 iconCls: 'x-fa fa-pencil',
                 commit: 'onEditAction',
-                text: 'Edit',
+                text: '編集',
                 ui: 'edit'
             }]
         }],

@@ -24,12 +24,12 @@ Ext.define('App.view.organization.Wizard', {
         items: [{
             xtype: 'textfield',
             reference: 'name',
-            label: 'Name',
+            label: '部門名',
             required: true,
             bind: '{record.name}'
         }, {
             xtype: 'combobox',
-            label: 'Manager',
+            label: 'マネージャー',
             displayField: 'label',
             valueField: 'value',
             queryMode: 'local',

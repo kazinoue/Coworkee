@@ -12,7 +12,7 @@ Ext.define('App.view.tablet.history.Browse', {
 
     items: [{
         xtype: 'grid',
-        emptyText: 'No activity was found to match your search',
+        emptyText: '検索結果に該当する活動履歴がありません',
         bind: '{history}',
         ui: 'listing',
 
@@ -29,6 +29,10 @@ Ext.define('App.view.tablet.history.Browse', {
             dataIndex: 'type',
             align: 'center',
             width: 75,
+            menuDisabled: true,
+            hideable: false,
+            sortable: false,
+            resizable: false,
             cell: {
                 cls: 'history-visual',
                 encodeHtml: false
@@ -38,7 +42,7 @@ Ext.define('App.view.tablet.history.Browse', {
                 '<div class="picture" style="background-image: url({recipient.picture})"></div>'
             ]
         }, {
-            text: 'Name / Title',
+            text: '名前 / 肩書',
             dataIndex: 'recipient.lastname',
             flex: 1,
             cell: {
@@ -51,7 +55,7 @@ Ext.define('App.view.tablet.history.Browse', {
                 '</tpl>'
             ]
         }, {
-            text: 'Organization',
+            text: '組織',
             dataIndex: 'recipient.organization.name',
             flex: 1,
             cell: {
@@ -63,7 +67,7 @@ Ext.define('App.view.tablet.history.Browse', {
                 '</tpl>'
             ]
         }, {
-            text: 'Office',
+            text: '事業所',
             dataIndex: 'recipient.office.name',
             flex: 1,
             cell: {
@@ -79,7 +83,7 @@ Ext.define('App.view.tablet.history.Browse', {
             xtype: 'datecolumn',
             dataIndex: 'created',
             format: 'Y-m-d H:i',
-            text: 'Date',
+            text: '作成日',
             flex: 1
         }]
     }]

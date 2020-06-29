@@ -24,7 +24,7 @@ Ext.define('App.view.widgets.ShowHeader', {
             xtype: 'button',
             iconCls: 'x-fa fa-pencil',
             handler: 'onEditTap',
-            text: 'Edit',
+            text: '編集',
             weight: 10,
             ui: 'flat',
 

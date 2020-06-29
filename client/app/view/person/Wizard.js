@@ -15,27 +15,18 @@ Ext.define('App.view.person.Wizard', {
     },
 
     bind: {
-        title: '{record.phantom? "Add" : "Edit"} Employee'
+        title: '従業員情報{record.phantom? "追加" : "編集"} '
     },
 
     cls: 'person-create',
 
     screens: [{
-        title: 'General',
+        title: '一般情報',
         iconCls: 'x-fa fa-info',
         items: [{
             xtype: 'textfield',
-            reference: 'firstname',
-            label: 'First Name',
-            required: true,
-            bind: '{record.firstname}',
-            listeners: {
-                blur: 'onNameFieldsBlur'
-            }
-        }, {
-            xtype: 'textfield',
             reference: 'lastname',
-            label: 'Last Name',
+            label: '姓',
             required: true,
             bind: '{record.lastname}',
             listeners: {
@@ -43,8 +34,17 @@ Ext.define('App.view.person.Wizard', {
             }
         }, {
             xtype: 'textfield',
+            reference: 'firstname',
+            label: '名',
+            required: true,
+            bind: '{record.firstname}',
+            listeners: {
+                blur: 'onNameFieldsBlur'
+            }
+        }, {
+            xtype: 'textfield',
             reference: 'username',
-            label: 'Username',
+            label: 'ユーザー名',
             required: true,
             bind: '{record.username}',
             listeners: {
@@ -53,7 +53,7 @@ Ext.define('App.view.person.Wizard', {
         }, {
             xtype: 'passwordfield',
             reference: 'password',
-            label: 'Password',
+            label: 'パスワード',
             required: true,
             bind: {
                 required: '{record.phantom}',
@@ -63,7 +63,7 @@ Ext.define('App.view.person.Wizard', {
         }, {
             xtype: 'passwordfield',
             reference: 'password_check',
-            label: 'Confirm Password',
+            label: 'パスワード（確認）',
             disabled: true,
             validators: {
                 type: 'controller',
@@ -75,24 +75,24 @@ Ext.define('App.view.person.Wizard', {
             }
         }]
     }, {
-        title: 'Personal',
+        title: '誕生日、連絡先',
         iconCls: 'x-fa fa-home',
         items: [{
             xtype: 'datepickerfield',
             reference: 'birthday',
-            label: 'Birthday',
+            label: '誕生日',
             required: true,
             bind: '{record.birthday}'
         }, {
             xtype: 'emailfield',
             reference: 'email',
-            label: 'Email',
+            label: 'メールアドレス',
             required: true,
             bind: '{record.email}'
         }, {
             xtype: 'textfield',
             reference: 'phone',
-            label: 'Phone',
+            label: '電話番号',
             required: true,
             bind: '{record.phone}'
         }, {
@@ -107,28 +107,28 @@ Ext.define('App.view.person.Wizard', {
             bind: '{record.linkedin}'
         }]
     }, {
-        title: 'Work',
+        title: '人事情報',  
         iconCls: 'x-fa fa-sitemap',
         items: [{
             xtype: 'textfield',
             reference: 'title',
-            label: 'Job Title',
+            label: '肩書',
             required: true,
             bind: '{record.title}'
         }, {
             xtype: 'datepickerfield',
             reference: 'started',
-            label: 'Entry date',
+            label: '入社日',
             required: true,
             bind: '{record.started}'
         }, {
             xtype: 'datepickerfield',
             reference: 'ended',
-            label: 'Exit date',
+            label: '退職日',
             bind: '{record.ended}'
         }, {
             xtype: 'combobox',
-            label: 'Office',
+            label: '事業所',
             displayField: 'label',
             valueField: 'value',
             queryMode: 'local',
@@ -140,7 +140,7 @@ Ext.define('App.view.person.Wizard', {
             }
         }, {
             xtype: 'combobox',
-            label: 'Organization',
+            label: '組織',
             displayField: 'label',
             valueField: 'value',
             queryMode: 'local',

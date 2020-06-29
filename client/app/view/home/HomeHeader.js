@@ -35,21 +35,21 @@ Ext.define('App.view.home.HomeHeader', {
                 '<tpl for="organization.manager">',
                     '<div class="item">',
                         '<div class="picture" style="background-image: url({picture})"></div>',
-                        '<div class="title">Manager</div>',
+                        '<div class="title">マネージャー</div>',
                         '<a class="link" href="#{url}">{fullname}</a>',
                     '</div>',
                 '</tpl>',
                 '<tpl for="organization">',
                     '<div class="item">',
                         '<span class="icon x-fa fa-sitemap"></span>',
-                        '<div class="title">Organization</div>',
+                        '<div class="title">組織</div>',
                         '<a class="link"  href="#{url}">{name}</a>',
                     '</div>',
                 '</tpl>',
                 '<tpl for="office">',
                     '<div class="item">',
                         '<span class="icon x-fa fa-globe"></span>',
-                        '<div class="title">Office</div>',
+                        '<div class="title">事業所</div>',
                         '<a class="link" href="#{url}">{name}</a>',
                     '</div>',
                 '</tpl>'
@@ -61,8 +61,8 @@ Ext.define('App.view.home.HomeHeader', {
             xtype: 'component',
             cls: 'header-clock',
             tpl: [
-                '<div class="date">{time:date("l, F d")}</div>',
-                '<div class="time"><span class="x-fa fa-clock-o"></span> {time:date("G:ia")}</div>'
+                '<div class="date">{time:date("n月d日(D)")}</div>',
+                '<div class="time"><span class="x-fa fa-clock-o"></span> {time:date("G:i")}</div>'
             ],
             bind: {
                 data: {

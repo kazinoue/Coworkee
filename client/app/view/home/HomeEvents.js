@@ -14,13 +14,13 @@ Ext.define('App.view.home.HomeEvents', {
             defaultUI: 'segmented flat',
             bind: '{range}',
             items: [{
-                text: 'Upcoming',
+                text: '今後の予定',
                 value: 'upcoming'
             }, {
-                text: 'Recent',
+                text: '最近の予定',
                 value: 'recent'
             }, {
-                text: 'Past',
+                text: '過去の予定',
                 value: 'past'
             }]
         }]
@@ -42,14 +42,14 @@ Ext.define('App.view.home.HomeEvents', {
                 '<div class="date">{date:date("M j")}</div>',
                 '<div class="title">',
                     '<tpl switch="type">',
-                    '<tpl case="birthday">Birthday',
-                    '<tpl case="anniversary">Anniversary',
-                    '<tpl case="started">Arrival',
-                    '<tpl case="ended">Departure',
+                    '<tpl case="birthday">誕生日',
+                    '<tpl case="anniversary">入社周年',
+                    '<tpl case="started">入社日',
+                    '<tpl case="ended">退職日',
                     '</tpl>',
                 '</div>',
             '</div>',
-            '<div class="event-content">',
+            '<div class="event-content">',  
                 '<div class="picture large" style="background-image:url({person.picture})"></div>',
                 '<div class="details">',
                     '<div class="person-name">{person.fullname}</div>',

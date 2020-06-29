@@ -5,27 +5,27 @@ Ext.define('App.store.Menu', {
     data: [{
         id: 'home',
         xtype: 'home',
-        text: 'Home',
+        text: 'ホーム',
         icon: 'home'
     }, {
         id: 'people',
         xtype: 'personbrowse',
-        text: 'Employees',
+        text: '従業員一覧',
         icon: 'users'
     }, {
         id: 'organizations',
         xtype: 'organizationbrowse',
-        text: 'Organizations',
+        text: '組織一覧',
         icon: 'sitemap'
     }, {
         id: 'offices',
         xtype: 'officebrowse',
-        text: 'Offices',
+        text: 'オフィス拠点',
         icon: 'globe'
     }, {
         id: 'history',
         xtype: 'historybrowse',
-        text: 'Activity',
+        text: 'アクティビティ',
         icon: 'history'
     }]
 });

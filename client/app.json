@@ -34,7 +34,7 @@
     "overrides": [
         "overrides"
     ],
-
+    
     /**
      * The Sencha Framework for this application: "ext" or "touch".
      */
@@ -49,7 +49,7 @@
      * The name of the theme for this application.
      */
 
-    "theme": "coworkee",
+    "theme": "Coworkee",
 
     /**
      * The list of required packages (with optional versions; default is "latest").
@@ -62,9 +62,10 @@
      */
     "requires": [
         "font-awesome",
-        "google"
+        "google",
+	    "ext-locale"
     ],
-
+    "locale": "ja",
     "mashup": {
         "map": {
             /**
@@ -297,21 +298,21 @@
      * are supported.
      *
      */
-     "loader": {
-         // This property controls how the loader manages caching for requests:
-         //
-         //   - true: allows requests to receive cached responses
-         //   - false: disable cached responses by adding a random "cache buster"
-         //   - other: a string (such as the build.timestamp shown here) to allow
-         //     requests to be cached for this build.
-         //
-         "cache": false,
+    "loader": {
+        // This property controls how the loader manages caching for requests:
+        //
+        //   - true: allows requests to receive cached responses
+        //   - false: disable cached responses by adding a random "cache buster"
+        //   - other: a string (such as the build.timestamp shown here) to allow
+        //     requests to be cached for this build.
+        //
+        "cache": false,
 
-         // When "cache" is not true, this value is the request parameter used
-         // to control caching.
-         //
-         "cacheParam": "_dc"
-     },
+        // When "cache" is not true, this value is the request parameter used
+        // to control caching.
+        //
+        "cacheParam": "_dc"
+    },
 
     /**
      * Settings specific to production builds.
@@ -337,7 +338,7 @@
     /**
      * Settings specific to testing builds.
      */
-    "testing": {
+    "testing": {        
     },
 
     /**
@@ -514,7 +515,7 @@
     "ignore": [
         "(^|/)CVS(/?$|/.*?$)"
     ],
-
+    
     /**
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.

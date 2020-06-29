@@ -4,7 +4,7 @@ Ext.define('App.view.organization.ShowPeople', {
 
     cls: 'organization-people',
     iconCls: 'x-fa fa-users',
-    title: 'Employees',
+    title: '従業員',
 
     header: {
         items: [{
@@ -15,7 +15,7 @@ Ext.define('App.view.organization.ShowPeople', {
             weigth: 10,
             bind: {
                 text: '{record.headcount}',
-                tooltip: 'Show employees of the <b>{record.name}</b> organization.'
+                tooltip: '<b>{record.name}</b> 部門のスタッフを表示.'
             }
         }]
     },
@@ -26,7 +26,7 @@ Ext.define('App.view.organization.ShowPeople', {
         ui: 'thumbnails',
         minHeight: 80,
         inline: true,
-        emptyText: 'This organization is empty',
+        emptyText: '組織にはスタッフが割り当てられていません',
         itemTpl: '<div class="thumbnail" style="background-image:url({picture})"></div>',
         listeners: {
             childtap: 'onPeopleChildTap'

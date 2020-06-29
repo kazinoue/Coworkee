@@ -19,7 +19,7 @@ Ext.define('App.view.tablet.office.BrowseToolbar', {
             xtype: 'button',
             iconCls: 'x-fa fa-plus',
             handler: 'onCreate',
-            text: 'Create',
+            text: '作成',
             weight: 50
         }
     }

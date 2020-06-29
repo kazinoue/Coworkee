@@ -11,7 +11,7 @@ Ext.define('App.view.person.ShowOrg', {
                 '{record.organization.name}'+
             '</a>'+
             '<div class="caption">'+
-                'Managed by '+
+                '上司： '+
                 '<a href="#{record.organization.manager.url}">'+
                     '{record.organization.manager.fullname}'+
                 '</a>'+
@@ -27,7 +27,7 @@ Ext.define('App.view.person.ShowOrg', {
             weigth: 10,
             bind: {
                 text: '{record.organization.headcount}',
-                tooltip: 'Show employees of the <b>{record.organization.name}</b> organization.'
+                tooltip: '<b>{record.organization.name}</b> オフィスの従業員を表示.'
             }
         }]
     },

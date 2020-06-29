@@ -28,9 +28,9 @@ Ext.define('App.view.home.HomeController', {
             time: now,
             greeting:
                 Ext.Date.isWeekend(now)? "Enjoy your weekend" :
-                hours < 13? "Good morning" :
-                hours < 17? "Good afternoon" :
-                "Good evening"
+                hours < 13? "おはようございます" :
+                hours < 17? "こんにちは" :
+                "こんばんは"
         });
 
         Ext.defer(function() {

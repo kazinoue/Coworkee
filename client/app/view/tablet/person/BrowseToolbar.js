@@ -7,7 +7,7 @@ Ext.define('App.view.tablet.person.BrowseToolbar', {
             xtype: 'combobox',
             valueField: 'value',
             displayField: 'label',
-            placeholder: 'All Organizations',
+            placeholder: '組織で検索',
             queryMode: 'local',
             weight: 11,
             bind: {
@@ -19,7 +19,7 @@ Ext.define('App.view.tablet.person.BrowseToolbar', {
             xtype: 'combobox',
             valueField: 'value',
             displayField: 'label',
-            placeholder: 'All Offices',
+            placeholder: '従業員で検索',
             queryMode: 'local',
             weight: 10,
             bind: {
@@ -31,7 +31,7 @@ Ext.define('App.view.tablet.person.BrowseToolbar', {
             xtype: 'button',
             iconCls: 'x-fa fa-plus',
             handler: 'onCreate',
-            text: 'Create',
+            text: '作成',
             weight: 50
         }
     }

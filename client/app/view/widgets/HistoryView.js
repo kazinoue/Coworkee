@@ -8,7 +8,7 @@ Ext.define('App.view.widgets.HistoryView', {
 
     cls: 'historyview',
     ui: 'history light',
-    emptyText: 'No history',
+    emptyText: '履歴がありません',
     deferEmptyText: false,
     minHeight: 80,
     inline: true,
@@ -23,7 +23,7 @@ Ext.define('App.view.widgets.HistoryView', {
                 '</div>',
                 '<div class="history-details">',
                     '<div class="display">{', value, '}</div>',
-                    '<div class="date">{created:date(\'F j, Y\')}</div>',
+                    '<div class="date">{created:date(\'Y/m/d\')}</div>',
                 '</div>',
             '</div>'
         ]);

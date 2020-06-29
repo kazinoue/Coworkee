@@ -17,7 +17,7 @@ Ext.define('App.view.auth.Login', {
         html:
             '<span class="logo x-fa fa-circle-o-notch"></span>'+
             '<div class="title">Coworkee</div>'+
-            '<div class="caption">Employee directory</div>'
+            '<div class="caption">社員情報ディレクトリ</div>'
     }, {
         xtype: 'formpanel',
         reference: 'form',
@@ -36,7 +36,7 @@ Ext.define('App.view.auth.Login', {
             required: true
         }, {
             xtype: 'button',
-            text: 'LOG IN',
+            text: 'ログイン',
             iconAlign: 'right',
             iconCls: 'x-fa fa-angle-right',
             handler: 'onLoginTap',

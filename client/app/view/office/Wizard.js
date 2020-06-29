@@ -16,36 +16,36 @@ Ext.define('App.view.office.Wizard', {
         items: [{
             xtype: 'textfield',
             reference: 'name',
-            label: 'Name',
+            label: '事業所名',
             required: true,
             bind: '{record.name}'
         }, {
             xtype: 'textfield',
             reference: 'address',
-            label: 'Address',
+            label: '住所',
             required: true,
             bind: '{record.address}'
         }, {
             xtype: 'textfield',
             reference: 'city',
-            label: 'City',
+            label: '市区町村名',
             required: true,
             bind: '{record.city}'
         }, {
             xtype: 'textfield',
             reference: 'postcode',
-            label: 'ZIP/Postal',
+            label: '郵便番号',
             bind: '{record.postcode}'
         }, {
             xtype: 'textfield',
             reference: 'country',
-            label: 'Country',
+            label: '国名',
             required: true,
             bind: '{record.country}'
         }, {
             xtype: 'textfield',
             reference: 'region',
-            label: 'Region',
+            label: '都道府県名',
             bind: '{record.region}'
         }]
     }]

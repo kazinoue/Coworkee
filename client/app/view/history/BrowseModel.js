@@ -15,7 +15,7 @@ Ext.define('App.view.history.BrowserModel', {
                     } else if (Ext.Date.isEqual(date, Ext.Date.subtract(today, Ext.Date.DAY, 1))) {
                         return 'Yesterday'
                     } else {
-                        return Ext.Date.format(date, 'D, F jS, Y');
+                        return Ext.Date.format(date, 'Y/m/d');
                     }
                 }
             }

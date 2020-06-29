@@ -84,14 +84,14 @@ Ext.define('App.view.widgets.Wizard', {
                         weight: 20,
                         ui: 'action',
                         bind: {
-                            text: '{record.phantom? "Create" : "Save"}'
+                            text: '{record.phantom? "作成" : "保存"}'
                         }
                     },
 
                     cancel: {
                         reference: 'cancel',
                         handler: 'onCancelTap',
-                        text: 'Cancel',
+                        text: 'キャンセル',
                         weight: 30,
                         ui: 'flat'
                     }

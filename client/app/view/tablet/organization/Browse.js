@@ -28,7 +28,7 @@ Ext.define('App.view.tablet.organization.Browse', {
         }],
 
         columns: [{
-            text: 'Name',
+            text: '氏名',
             dataIndex: 'name',
             flex: 2,
             cell: {
@@ -36,7 +36,7 @@ Ext.define('App.view.tablet.organization.Browse', {
             },
             tpl: '<a class="item-title" href="#{url}">{name}</a>'
         }, {
-            text: 'Manager',
+            text: 'マネージャー',
             dataIndex: 'manager.lastname',
             flex: 2,
             cell: {
@@ -54,7 +54,7 @@ Ext.define('App.view.tablet.organization.Browse', {
                 '</tpl>'
             ]
         }, {
-            text: 'Headcount',
+            text: '人数',
             dataIndex: 'headcount',
             flex: 1,
             cell: {

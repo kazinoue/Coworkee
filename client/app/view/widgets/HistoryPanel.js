@@ -9,7 +9,7 @@ Ext.define('App.view.widgets.HistoryPanel', {
     cls: 'historypanel',
     defaultBindProperty: 'store',
     referenceHolder: true,
-    title: 'Recent Activity',
+    title: '直近の活動',
 
     header: {
         items: {
@@ -28,7 +28,7 @@ Ext.define('App.view.widgets.HistoryPanel', {
         xtype: 'historyview',
         reference: 'historyview',
         displayField: 'subject',
-        emptyText: 'No activity was found',
+        emptyText: '活動履歴がありません',
         selectable: {
             disabled: true
         }

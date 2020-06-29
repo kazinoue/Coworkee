@@ -4,7 +4,7 @@ Ext.define('App.view.office.ShowPeople', {
 
     cls: 'office-people',
     iconCls: 'x-fa fa-users',
-    title: 'Employees',
+    title: '従業員',
 
     header: {
         items: [{
@@ -15,7 +15,7 @@ Ext.define('App.view.office.ShowPeople', {
             weigth: 10,
             bind: {
                 text: '{record.headcount}',
-                tooltip: 'Show employees of the <b>{record.name}</b> office.'
+                tooltip: '<b>{record.name}</b> オフィスの従業員を表示'
             }
         }]
     },

@@ -25,7 +25,7 @@ Ext.define('App.view.person.ShowOffice', {
             weigth: 10,
             bind: {
                 text: '{record.office.headcount}',
-                tooltip: 'Show employees of the <b>{record.office.name}</b> office.'
+                tooltip: '<b>{record.office.name} オフィスの従業員を表示</b> office.'
             }
         }],
     },

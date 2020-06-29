@@ -16,7 +16,7 @@ Ext.define('App.view.organization.Show', {
                     tpl: [
                         '<div class="icon x-fa fa-sitemap"></div>',
                         '<div class="name">{name}</div>',
-                        '<div class="desc">Managed by <b>{manager.fullname}</b><div>'
+                        '<div class="desc">上司： <b>{manager.fullname}</b><div>'
                     ]
                 }
             }

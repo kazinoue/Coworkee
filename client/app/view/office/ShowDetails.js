@@ -3,12 +3,12 @@ Ext.define('App.view.office.ShowDetails', {
     xtype: 'officeshowdetails',
 
     cls: 'office-details',
-    title: 'Details',
+    title: '詳細情報',
 
     tpl: [
         '<div class="block-section">',
             '<div class="item">',
-                '<div class="label">Address</div>',
+                '<div class="label">住所</div>',
                 '<div class="value">',
                     '<div>{address}</div>',
                     '<tpl if="region || postcode">',

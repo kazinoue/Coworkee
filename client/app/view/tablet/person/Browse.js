@@ -39,6 +39,7 @@ Ext.define('App.view.tablet.person.Browse', {
             menuDisabled: true,
             hideable: false,
             sortable: false,
+            resizable: false,
             align: 'center',
             width: 58,
             cell: {
@@ -46,7 +47,7 @@ Ext.define('App.view.tablet.person.Browse', {
             },
             tpl: '<div class="picture" style="background-image: url({picture})"></div>'
         }, {
-            text: 'Name / Title',
+            text: '氏名 / 肩書',
             dataIndex: 'lastname',
             flex: 1,
             cell: {
@@ -57,7 +58,7 @@ Ext.define('App.view.tablet.person.Browse', {
                 '<div class="item-caption">{title}</div>'
             ]
         }, {
-            text: 'Organization',
+            text: '組織',
             dataIndex: 'organization.name',
             flex: 1,
             cell: {
@@ -67,12 +68,12 @@ Ext.define('App.view.tablet.person.Browse', {
                 '<tpl for="organization">',
                     '<a class="item-title" href="#{url}">{name}</a>',
                     '<div class="item-caption">',
-                        'Managed by <a href="#{manager.url}">{manager.fullname}</a>',
+                        '上司： <a href="#{manager.url}">{manager.fullname}</a>',
                     '</div>',
                 '</tpl>'
             ]
         }, {
-            text: 'Office',
+            text: '事業所',
             dataIndex: 'office.name',
             flex: 1,
             cell: {
@@ -87,7 +88,7 @@ Ext.define('App.view.tablet.person.Browse', {
         }, {
             sortable: false,
             dataIndex: 'email',
-            text: 'Email/Phone',
+            text: 'メール/電話番号',
             flex: 1,
             cell: {
                 encodeHtml: false

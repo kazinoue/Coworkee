@@ -55,7 +55,7 @@ Ext.define('App.view.main.Menu', {
             xtype: 'button',
             handler: 'onLogoutTap',
             iconCls: 'x-fa fa-power-off',
-            text: 'Log out',
+            text: 'ログアウト',
             textAlign: 'left',
             ui: 'large flat dark',
             weight: 20
